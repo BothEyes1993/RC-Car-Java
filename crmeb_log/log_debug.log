@@ -1,0 +1,344 @@
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:19:41.466",
+                    "level": "DEBUG",
+                    "thread": "restartedMain",
+                    "class": "o.s.b.c.l.ClasspathLoggingApplicationListener",
+                    "message": "Application started with classpath: [file:/Users/pankai/FX/WeChatProjects/RC-Car-Java/target/classes/]" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:19:41.622",
+                    "level": "DEBUG",
+                    "thread": "restartedMain",
+                    "class": "o.springframework.boot.SpringApplication",
+                    "message": "Loading source class CrmebApplication" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:19:41.684",
+                    "level": "DEBUG",
+                    "thread": "restartedMain",
+                    "class": "o.s.b.c.c.ConfigFileApplicationListener",
+                    "message": "Loaded config file 'file:/Users/pankai/FX/WeChatProjects/RC-Car-Java/target/classes/application.yml' (classpath:/application.yml)" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:19:41.685",
+                    "level": "DEBUG",
+                    "thread": "restartedMain",
+                    "class": "o.s.boot.devtools.restart.ChangeableUrls",
+                    "message": "Matching URLs for reloading : [file:/Users/pankai/FX/WeChatProjects/RC-Car-Java/target/classes/]" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:19:41.686",
+                    "level": "DEBUG",
+                    "thread": "restartedMain",
+                    "class": "o.s.b.devtools.settings.DevToolsSettings",
+                    "message": "Included patterns for restart : [/mybatis-plus-[\w-]+.jar]" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:19:41.686",
+                    "level": "DEBUG",
+                    "thread": "restartedMain",
+                    "class": "o.s.b.devtools.settings.DevToolsSettings",
+                    "message": "Excluded patterns for restart : [/spring-boot-actuator/target/classes/, /spring-boot-devtools/target/classes/, /spring-boot/target/classes/, /spring-boot-starter-[\w-]+/, /spring-boot-autoconfigure/target/classes/, /spring-boot-starter/target/classes/]" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:19:41.687",
+                    "level": "DEBUG",
+                    "thread": "restartedMain",
+                    "class": "o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext",
+                    "message": "Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@116a3a21" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:19:43.988",
+                    "level": "DEBUG",
+                    "thread": "restartedMain",
+                    "class": "o.s.b.w.e.t.TomcatServletWebServerFactory",
+                    "message": "Code archive: /Users/pankai/.m2/repository/org/springframework/boot/spring-boot/2.2.6.RELEASE/spring-boot-2.2.6.RELEASE.jar" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:19:43.989",
+                    "level": "DEBUG",
+                    "thread": "restartedMain",
+                    "class": "o.s.b.w.e.t.TomcatServletWebServerFactory",
+                    "message": "Code archive: /Users/pankai/.m2/repository/org/springframework/boot/spring-boot/2.2.6.RELEASE/spring-boot-2.2.6.RELEASE.jar" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:19:43.989",
+                    "level": "DEBUG",
+                    "thread": "restartedMain",
+                    "class": "o.s.b.w.e.t.TomcatServletWebServerFactory",
+                    "message": "Document root: /Users/pankai/FX/WeChatProjects/RC-Car-Java/src/main/webapp" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:19:44.436",
+                    "level": "DEBUG",
+                    "thread": "restartedMain",
+                    "class": "o.s.web.context.ContextLoader",
+                    "message": "Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:19:44.985",
+                    "level": "DEBUG",
+                    "thread": "restartedMain",
+                    "class": "o.s.b.w.s.ServletContextInitializerBeans",
+                    "message": "Mapping filters: filterRegistrationBean urls=[/*] order=-2147483647, filterRegistrationBean urls=[/*] order=2147483647, filterRegistrationBean urls=[/*] order=2147483647, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, corsFilter urls=[/*] order=2147483647" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:19:44.985",
+                    "level": "DEBUG",
+                    "thread": "restartedMain",
+                    "class": "o.s.b.w.s.ServletContextInitializerBeans",
+                    "message": "Mapping servlets: statViewServlet urls=[/druid/*], dispatcherServlet urls=[/]" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:19:45.005",
+                    "level": "DEBUG",
+                    "thread": "restartedMain",
+                    "class": "o.s.b.a.m.w.servlet.WebMvcMetricsFilter",
+                    "message": "Filter 'webMvcMetricsFilter' configured for use" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:19:45.005",
+                    "level": "DEBUG",
+                    "thread": "restartedMain",
+                    "class": "o.s.b.w.s.f.OrderedRequestContextFilter",
+                    "message": "Filter 'requestContextFilter' configured for use" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:19:45.006",
+                    "level": "DEBUG",
+                    "thread": "restartedMain",
+                    "class": "o.springframework.web.filter.CorsFilter",
+                    "message": "Filter 'corsFilter' configured for use" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:19:45.006",
+                    "level": "DEBUG",
+                    "thread": "restartedMain",
+                    "class": "o.s.b.w.s.f.OrderedCharacterEncodingFilter",
+                    "message": "Filter 'characterEncodingFilter' configured for use" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:19:45.006",
+                    "level": "DEBUG",
+                    "thread": "restartedMain",
+                    "class": "o.s.b.w.s.f.OrderedFormContentFilter",
+                    "message": "Filter 'formContentFilter' configured for use" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:19:49.093",
+                    "level": "DEBUG",
+                    "thread": "restartedMain",
+                    "class": "o.s.w.s.m.m.a.RequestMappingHandlerMapping",
+                    "message": "361 mappings in 'requestMappingHandlerMapping'" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:19:49.686",
+                    "level": "DEBUG",
+                    "thread": "restartedMain",
+                    "class": "o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin",
+                    "message": "Application Admin MBean registered with name 'org.springframework.boot:type=Admin,name=SpringApplication'" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:19:49.695",
+                    "level": "DEBUG",
+                    "thread": "restartedMain",
+                    "class": "o.s.b.d.livereload.LiveReloadServer",
+                    "message": "Starting live reload server on port 35729" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:19:49.705",
+                    "level": "DEBUG",
+                    "thread": "restartedMain",
+                    "class": "o.s.w.s.m.m.a.RequestMappingHandlerAdapter",
+                    "message": "ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:19:49.760",
+                    "level": "DEBUG",
+                    "thread": "restartedMain",
+                    "class": "o.s.w.s.handler.SimpleUrlHandlerMapping",
+                    "message": "Patterns [/webjars/**, /**, /swagger-ui.html] in 'resourceHandlerMapping'" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:19:49.778",
+                    "level": "DEBUG",
+                    "thread": "restartedMain",
+                    "class": "o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver",
+                    "message": "ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:19:51.740",
+                    "level": "DEBUG",
+                    "thread": "restartedMain",
+                    "class": "o.s.boot.devtools.restart.Restarter",
+                    "message": "Creating new Restarter for thread Thread[main,5,main]" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:19:51.740",
+                    "level": "DEBUG",
+                    "thread": "restartedMain",
+                    "class": "o.s.boot.devtools.restart.Restarter",
+                    "message": "Immediately restarting application" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:19:51.740",
+                    "level": "DEBUG",
+                    "thread": "restartedMain",
+                    "class": "o.s.boot.devtools.restart.Restarter",
+                    "message": "Created RestartClassLoader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@38b2e32d" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:19:51.740",
+                    "level": "DEBUG",
+                    "thread": "restartedMain",
+                    "class": "o.s.boot.devtools.restart.Restarter",
+                    "message": "Starting application CrmebApplication with URLs [file:/Users/pankai/FX/WeChatProjects/RC-Car-Java/target/classes/]" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:19:52.109",
+                    "level": "DEBUG",
+                    "thread": "RMI TCP Connection(12)-192.168.1.25",
+                    "class": "o.s.web.servlet.DispatcherServlet",
+                    "message": "Detected StandardServletMultipartResolver" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:19:52.119",
+                    "level": "DEBUG",
+                    "thread": "RMI TCP Connection(12)-192.168.1.25",
+                    "class": "o.s.web.servlet.DispatcherServlet",
+                    "message": "enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:21:18.864",
+                    "level": "DEBUG",
+                    "thread": "SpringContextShutdownHook",
+                    "class": "o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext",
+                    "message": "Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@116a3a21, started on Mon Sep 14 00:19:41 CST 2020" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:21:18.869",
+                    "level": "DEBUG",
+                    "thread": "SpringContextShutdownHook",
+                    "class": "o.s.b.a.endpoint.jmx.JmxEndpointExporter",
+                    "message": "Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Beans' from the JMX domain" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:21:18.869",
+                    "level": "DEBUG",
+                    "thread": "SpringContextShutdownHook",
+                    "class": "o.s.b.a.endpoint.jmx.JmxEndpointExporter",
+                    "message": "Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Caches' from the JMX domain" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:21:18.869",
+                    "level": "DEBUG",
+                    "thread": "SpringContextShutdownHook",
+                    "class": "o.s.b.a.endpoint.jmx.JmxEndpointExporter",
+                    "message": "Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Health' from the JMX domain" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:21:18.869",
+                    "level": "DEBUG",
+                    "thread": "SpringContextShutdownHook",
+                    "class": "o.s.b.a.endpoint.jmx.JmxEndpointExporter",
+                    "message": "Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Info' from the JMX domain" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:21:18.869",
+                    "level": "DEBUG",
+                    "thread": "SpringContextShutdownHook",
+                    "class": "o.s.b.a.endpoint.jmx.JmxEndpointExporter",
+                    "message": "Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Conditions' from the JMX domain" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:21:18.869",
+                    "level": "DEBUG",
+                    "thread": "SpringContextShutdownHook",
+                    "class": "o.s.b.a.endpoint.jmx.JmxEndpointExporter",
+                    "message": "Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Configprops' from the JMX domain" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:21:18.869",
+                    "level": "DEBUG",
+                    "thread": "SpringContextShutdownHook",
+                    "class": "o.s.b.a.endpoint.jmx.JmxEndpointExporter",
+                    "message": "Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Env' from the JMX domain" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:21:18.869",
+                    "level": "DEBUG",
+                    "thread": "SpringContextShutdownHook",
+                    "class": "o.s.b.a.endpoint.jmx.JmxEndpointExporter",
+                    "message": "Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Loggers' from the JMX domain" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:21:18.869",
+                    "level": "DEBUG",
+                    "thread": "SpringContextShutdownHook",
+                    "class": "o.s.b.a.endpoint.jmx.JmxEndpointExporter",
+                    "message": "Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Threaddump' from the JMX domain" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:21:18.869",
+                    "level": "DEBUG",
+                    "thread": "SpringContextShutdownHook",
+                    "class": "o.s.b.a.endpoint.jmx.JmxEndpointExporter",
+                    "message": "Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Metrics' from the JMX domain" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:21:18.869",
+                    "level": "DEBUG",
+                    "thread": "SpringContextShutdownHook",
+                    "class": "o.s.b.a.endpoint.jmx.JmxEndpointExporter",
+                    "message": "Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Scheduledtasks' from the JMX domain" }
+                    
+{
+                    "app": "RC-Car-Java",
+                    "timestamp":"2020-09-14 00:21:18.869",
+                    "level": "DEBUG",
+                    "thread": "SpringContextShutdownHook",
+                    "class": "o.s.b.a.endpoint.jmx.JmxEndpointExporter",
+                    "message": "Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Mappings' from the JMX domain" }
+                    
