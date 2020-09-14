@@ -4,11 +4,11 @@
 startTime=`date +'%Y-%m-%d %H:%M:%S'`
 
 #接口项目站点路径（目录按照各自配置）
-APP_PATH=/www/wwwroot/api.java.crmeb.net/ #线上地址
-#APP_PATH=/Library/WebServer/Documents/zhongbang/java/crmeb #本地地址
+APP_PATH=/www/wwwroot/api.java.PC-Car-Java.net/ #线上地址
+#APP_PATH=/Library/WebServer/Documents/zhongbang/java/PC-Car-Java #本地地址
 
 #jar包文件名称
-APP_NAME=$APP_PATH/target/Crmeb.jar
+APP_NAME=$APP_PATH/target/PC-Car-Java.jar
 
 #日志文件名称
 LOG_FILE=$APP_PATH/crmeb_out.log
@@ -24,14 +24,14 @@ APP_YML=--spring.profiles.active=prod
 
 rm -rf $LOG_FILE
 
-echo "开始停止 Crmeb 项目进程"
+echo "开始停止 PC-Car-Java 项目进程"
 #查询进程，并杀掉当前jar/java程序
 
 pid=`ps -ef|grep $APP_NAME | grep -v grep | awk '{print $2}'`
 if [ $pid ];then
   echo "pid: $pid"
   kill -9 $pid
-  echo "Crmeb 项目进程进程终止成功"
+  echo "PC-Car-Java 项目进程进程终止成功"
 fi
 
 sleep 2
@@ -54,10 +54,10 @@ if test -e $APP_NAME;then
       success=`grep "Started CrmebApplication in " $LOG_FILE`
       if [[ "$success" != "" ]]
       then
-#          echo "Crmeb start ........."
+#          echo "PC-Car-Java start ........."
           break
       else
-#          echo "Crmeb Running ......."
+#          echo "PC-Car-Java Running ......."
           sleep 1s
       fi
 
@@ -69,12 +69,12 @@ if test -e $APP_NAME;then
           tail -f $LOG_FILE
           break
       else
-#          echo "Crmeb Running ......."
+#          echo "PC-Car-Java Running ......."
           sleep 1s
       fi
 
   done
-  echo "Crmeb Started Success"
+  echo "PC-Car-Java Started Success"
 
 endTime=`date +'%Y-%m-%d %H:%M:%S'`
 startSecond=$(date --date="$startTime" +%s);
@@ -108,7 +108,7 @@ if test -e $INSTALL_FILE;then
   echo '已经统计过首次安装'
 else
   #开源不易，首次安装统计
-  curl 'http://shop.crmeb.net/index.php/admin/server.upgrade_api/updatewebinfo' \
+  curl 'http://shop.PC-Car-Java.net/index.php/admin/server.upgrade_api/updatewebinfo' \
    -H 'Content-Type: application/json' \
    -d '
    {

@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.zbkj</groupId>
-    <artifactId>crmeb</artifactId>
+    <artifactId>PC-Car-Java</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>crmeb</name>
-    <description>Crmeb project for Spring Boot</description>
+    <name>PC-Car-Java</name>
+    <description>PC-Car-Java project for Spring Boot</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -396,7 +396,7 @@
 
     <build>
         <!--打包配置-->
-        <finalName>Crmeb</finalName>
+        <finalName>PC-Car-Java</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
