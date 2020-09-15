@@ -18,35 +18,11 @@
         <java.version>1.8</java.version>
     </properties>
 
-<!--    <profiles>-->
-<!--        <profile>-->
-<!--            <id>dev</id>-->
-<!--            <properties>-->
-<!--                <springProfilesActive>dev</springProfilesActive>-->
-<!--            </properties>-->
-<!--            &lt;!&ndash; 是否默认 true表示默认&ndash;&gt;-->
-<!--            <activation>-->
-<!--                <activeByDefault>true</activeByDefault>-->
-<!--            </activation>-->
-<!--        </profile>-->
-<!--        <profile>-->
-<!--            &lt;!&ndash;测试环境&ndash;&gt;-->
-<!--            <id>beta</id>-->
-<!--            <properties>-->
-<!--                <springProfilesActive>beta</springProfilesActive>-->
-<!--            </properties>-->
-<!--        </profile>-->
-
-<!--        <profile>-->
-<!--            &lt;!&ndash; 生产环境 &ndash;&gt;-->
-<!--            <id>prod</id>-->
-<!--            <properties>-->
-<!--                <springProfilesActive>prod</springProfilesActive>-->
-<!--            </properties>-->
-<!--        </profile>-->
-<!--    </profiles>-->
-
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -57,30 +33,6 @@
                     <artifactId>junit-vintage-engine</artifactId>
                 </exclusion>
             </exclusions>
-        </dependency>
-
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.cloud</groupId>-->
-<!--            <artifactId>spring-cloud-context</artifactId>-->
-<!--        </dependency>-->
-
-        <!-- JSTL for JSP  spring boot搭建web项目，跳转到jsp一定要添加下面的jar包，否则出现跳转的时候，变成下载的功能，保存该页面-->
-
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>jstl</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.tomcat.embed</groupId>
-            <artifactId>tomcat-embed-jasper</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.tomcat</groupId>
-            <artifactId>tomcat-jsp-api</artifactId>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
@@ -204,11 +156,6 @@
             <version>5.3</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
         <!-- Spring Boot Redis 依赖 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -254,20 +201,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
-
-        <!--阿里云oss上传-->
-<!--        <dependency>-->
-<!--            <groupId>com.aliyun.oss</groupId>-->
-<!--            <artifactId>aliyun-sdk-oss</artifactId>-->
-<!--            <version>3.5.0</version>-->
-<!--        </dependency>-->
-
-        <!--腾讯云cos上传-->
-<!--        <dependency>-->
-<!--            <groupId>com.qcloud</groupId>-->
-<!--            <artifactId>cos_api</artifactId>-->
-<!--            <version>5.6.18</version>-->
-<!--        </dependency>-->
 
         <!--httpclient-->
         <dependency>
