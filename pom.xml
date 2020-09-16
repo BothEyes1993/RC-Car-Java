@@ -334,6 +334,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <executable>true</executable> <!-- 这样子打包出来的jar/war就是可执行的 -->
+                </configuration>
             </plugin>
         </plugins>
 

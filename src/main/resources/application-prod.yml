@@ -8,9 +8,6 @@ server:
   asyncConfig: true
 
 spring:
-  profiles:
-    #  配置的环境
-    active: prod
     #  数据库配置
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
@@ -39,8 +36,6 @@ logging:
     com.zbjk.crmeb: debug
     org.springframework.boot.autoconfigure: ERROR
   config: classpath:logback-spring.xml
-  file:
-    path: ./crmeb_log
 
 # mybatis 配置
 mybatis-plus:

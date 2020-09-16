@@ -4,6 +4,7 @@ package com.zbkj.crmeb.user.controller;
 import com.common.CommonPage;
 import com.common.CommonResult;
 import com.common.PageParamRequest;
+import com.zbkj.crmeb.task.cloud.AsyncCloud;
 import com.zbkj.crmeb.user.model.User;
 import com.zbkj.crmeb.user.request.UserOperateIntegralMoneyRequest;
 import com.zbkj.crmeb.user.request.UserRequest;
@@ -17,6 +18,8 @@ import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.poi.ss.formula.functions.T;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
@@ -36,8 +39,15 @@ import java.util.List;
 @Api(tags = "会员管理")
 @Validated
 public class UserController {
+    private static final Logger logger = LoggerFactory.getLogger(AsyncCloud.class);
+
     @Autowired
     private UserService userService;
+
+    @GetMapping("/abc")
+    public void testPage3(){
+        logger.info("group===");
+    }
 
     /**
      * 分页显示用户表

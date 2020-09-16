@@ -18,24 +18,21 @@ import org.springframework.web.servlet.handler.MappedInterceptor;
 
 //token验证拦截器
 
-@Configuration
+// 暂时注释ppk  @Configuration
 public class WebConfig implements WebMvcConfigurer {
 
     // 这里使用一个Bean为的是可以在拦截器中自由注入，也可以在拦截器中使用SpringUtil.getBean 获取
     // 但是觉得这样更优雅
 
-    @Bean
-    public HandlerInterceptor adminAuthInterceptor(){
-        return new AdminAuthInterceptor();
-    }
+    //@Bean
+    public HandlerInterceptor adminAuthInterceptor(){   return new AdminAuthInterceptor(); }
 
-
-    @Bean
+    //@Bean
     public HandlerInterceptor adminTokenInterceptor(){
         return new AdminTokenInterceptor();
     }
 
-    @Bean
+    //@Bean
     public HandlerInterceptor frontTokenInterceptor(){
         return new FrontTokenInterceptor();
     }
