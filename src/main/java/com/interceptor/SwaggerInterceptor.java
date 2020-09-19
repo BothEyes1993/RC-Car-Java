@@ -13,6 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+/* 注释：改成用SwaggerBootstrapUi提供了简单的Basic认证功能，这个暂时废弃
+
 public class SwaggerInterceptor extends HandlerInterceptorAdapter {
     private String username;
     private String password;
@@ -66,3 +68,4 @@ public class SwaggerInterceptor extends HandlerInterceptorAdapter {
         }
     }
 }
+*/

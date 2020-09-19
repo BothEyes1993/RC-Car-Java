@@ -1,6 +1,7 @@
 package com.zbkj.crmeb.config;
 
 import com.constants.Constants;
+import com.github.xiaoymin.swaggerbootstrapui.annotations.EnableSwaggerBootstrapUI;
 import com.google.common.base.Predicate;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -26,10 +27,12 @@ import static com.google.common.collect.Lists.newArrayList;
 
 @Configuration
 @EnableSwagger2
+@EnableSwaggerBootstrapUI
 public class SwaggerConfig{
 
     //是否开启swagger，正式环境一般是需要关闭的，可根据springboot的多环境配置进行设置
-    Boolean swaggerEnabled = true;
+    @Value("${swagger.enable}")
+    Boolean swaggerEnabled;
 
     @Value("${server.port}")
     private String port;
@@ -135,6 +138,9 @@ public class SwaggerConfig{
         return res;
     }
 
+    /*
+     * 效果：配置完之后点击右上角的Authorize，弹出认证窗口之后输入请求token，这样之后的每次请求的请求头都会带有token认证信息
+     */
     private List<SecurityReference> defaultAuth() {
         List<SecurityReference> res = new ArrayList<>();
         AuthorizationScope authorizationScope = new AuthorizationScope("global", Constants.HEADER_AUTHORIZATION_KEY);

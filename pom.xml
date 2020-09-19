@@ -121,6 +121,13 @@
             <version>2.9.2</version>
         </dependency>
 
+        <!--引入swagger ui包-->
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>swagger-bootstrap-ui</artifactId>
+            <version>1.9.3</version>
+        </dependency>
+
         <!-- swagger2 -->
         <dependency>
             <groupId>io.springfox</groupId>

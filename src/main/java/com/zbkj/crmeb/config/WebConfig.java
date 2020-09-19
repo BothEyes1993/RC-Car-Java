@@ -4,8 +4,8 @@ import com.filter.ResponseFilter;
 import com.interceptor.AdminAuthInterceptor;
 import com.interceptor.AdminTokenInterceptor;
 import com.interceptor.FrontTokenInterceptor;
-import com.interceptor.SwaggerInterceptor;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
@@ -15,10 +15,11 @@ import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.handler.MappedInterceptor;
+import springfox.documentation.spring.web.SpringfoxWebMvcConfiguration;
 
 //token验证拦截器
 
-// 暂时注释ppk  @Configuration
+@Configuration
 public class WebConfig implements WebMvcConfigurer {
 
     // 这里使用一个Bean为的是可以在拦截器中自由注入，也可以在拦截器中使用SpringUtil.getBean 获取
@@ -40,12 +41,13 @@ public class WebConfig implements WebMvcConfigurer {
     @Bean
     public ResponseFilter responseFilter(){ return new ResponseFilter(); }
 
-    @Value("${swagger.basic.username}")
-    private String username;
-    @Value("${swagger.basic.password}")
-    private String password;
-    @Value("${swagger.basic.check}")
-    private Boolean check;
+    //改成用SwaggerBootstrapUi提供了简单的Basic认证功能，这个暂时废弃
+//    @Value("${swagger.basic.username}")
+//    private String username;
+//    @Value("${swagger.basic.password}")
+//    private String password;
+//    @Value("${swagger.basic.check}")
+//    private Boolean check;
 
 
     @Override
@@ -107,6 +109,10 @@ public class WebConfig implements WebMvcConfigurer {
                 .addResourceLocations("classpath:/META-INF/resources/");
         registry.addResourceHandler("/webjars/**")
                 .addResourceLocations("classpath:/META-INF/resources/webjars/");
+
+        //新加入swagger新UI，swagger-bootstrap-ui
+        registry.addResourceHandler("doc.html");
+        registry.addResourceHandler("doc.html").addResourceLocations("classpath:/META-INF/resources/");
     }
 
     @Bean
@@ -118,12 +124,17 @@ public class WebConfig implements WebMvcConfigurer {
         return registration;
     }
 
-    /* 必须在此处配置拦截器,要不然拦不到swagger的静态资源 */
+    /* 必须在此处配置拦截器,要不然拦不到swagger的静态资源
+    目的：自定义swagger拦截器，控制enable的配置可以动态开关密码校验；
+    注释：改成用SwaggerBootstrapUi提供了简单的Basic认证功能，这个暂时废弃
     @Bean
     @ConditionalOnProperty(name = "swagger.basic.enable", havingValue = "true")
     public MappedInterceptor getMappedInterceptor() {
         return new MappedInterceptor(new String[]{"/swagger-ui.html", "/webjars/**"}, new SwaggerInterceptor(username, password, check));
     }
+    */
+
+
     // 验证参数是否完全匹配
 //    @Override
 //    public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {

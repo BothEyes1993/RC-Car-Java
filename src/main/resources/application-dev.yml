@@ -68,8 +68,9 @@ mybatis-plus:
 
 #swagger 配置
 swagger:
+  production: false #生产环境下不要将其对外开放，true：屏蔽所有资源
+  enable: true #是否开启swagger界面
   basic:
-    enable: true #是否开启
-    check: false #是否打开验证
-    username: #访问swagger的账号
-    password: #访问swagger的密码
+    enable: false #是否开启密码弹窗验证
+    username: aaa #访问swagger的账号
+    password: aaa #访问swagger的密码
