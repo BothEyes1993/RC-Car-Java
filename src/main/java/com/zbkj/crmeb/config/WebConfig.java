@@ -52,6 +52,12 @@ public class WebConfig implements WebMvcConfigurer {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
+        /**
+         * 测试服务，暂时注释
+         * @Author: PPK
+         * @Date: 2020/9/20 上午11:24
+
+
         //添加token拦截器
         //addPathPatterns添加需要拦截的命名空间；
         //excludePathPatterns添加排除拦截命名空间
@@ -100,6 +106,8 @@ public class WebConfig implements WebMvcConfigurer {
                 excludePathPatterns("/api/front/category").
 //                excludePathPatterns("/api/front/cart/count").
                 excludePathPatterns("/swagger-resources/**", "/webjars/**", "/v2/**", "/swagger-ui.html/**");
+
+         */
     }
 
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
